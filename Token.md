@@ -3,10 +3,10 @@ pragma solidity ^0.8.2;
 contract Token {
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
-    uint public totalSupply = 100000000 * 10 ** 18;
-    string public name = "Sloth Token";
-    string public symbol = "SHT";
-    uint public decimals = 18;
+    uint public totalSupply = 100000000 * 10 ** 9;
+    string public name = "DIAMOND SILVER";
+    string public symbol = "DISS";
+    uint public decimals = 9;
     
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
